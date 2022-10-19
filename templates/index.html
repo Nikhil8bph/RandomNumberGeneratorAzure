@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Housie Random Number Generator</title>
+</head>
+<body>
+<h1><center>Housie Random Number Generator</center></h1>
+
+<form action="/forward/" method="post">
+    <button name="forwardBtn" type="submit">Generate</button>
+</form>
+    <h1>The Number is: {{ forward_message }} </h1>
+
+<h1>Available Numbers</h1>
+<h4>{{ numbers_available }} </h4>
+
+<form action="/forward/" method="get">
+    <button name="resetBtn" type="submit">Reset</button>
+</form>
+
+</body>
+</html>
